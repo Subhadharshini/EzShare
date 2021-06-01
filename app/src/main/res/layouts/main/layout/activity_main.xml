@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.cnnfe.ezshare.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="173dp"
+                android:layout_height="58dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center|left"
+                android:layout_marginBottom="30dp"
+                android:background="@color/teal_200"
+                android:padding="10dp"
+                android:text="Send"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/receive"
+                android:layout_width="173dp"
+                android:layout_height="58dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center|right"
+                android:layout_marginBottom="30dp"
+                android:background="@color/teal_200"
+                android:padding="10dp"
+                android:text="Receive"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:fontFamily="cursive"
+                android:paddingTop="30dp"
+                android:text="Choose to Send/Receive"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
